@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uzun Elektrik | 7/24 Elektrikçi, Arıza Giderme, Pano Tasarımı</title>
+  <meta name="description" content="Uzun Elektrik: pano tasarımı, elektrik arıza giderme, kaçak akım şalteri tamiri. 7/24 ulaşabilirsiniz. Tel: 0 531 506 67 14">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="logo" href="#ust" aria-label="Uzun Elektrik ana sayfa">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="M13 2 4 14h6l-1 8 9-12h-6z" fill="currentColor"/></svg>
+    Uzun Elektrik
+  </a>
+  <nav>
+    <a href="#hizmetler">Hizmetler</a>
+    <a href="#surec">Nasıl çalışıyoruz</a>
+    <a href="#iletisim">İletişim</a>
+  </nav>
+  <a class="call-sm" href="tel:+905315066714">0 531 506 67 14</a>
+</header>
+
+<main id="ust">
+
+  <section class="hero">
+    <svg class="spark" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 60 H300 L330 20 L370 100 L400 60 H1200" />
+    </svg>
+
+    <div class="hero-text">
+      <p class="live"><span class="dot"></span> Şu an hatta: 7 gün 24 saat açık</p>
+      <h1>Elektrik gitti mi?<br>Biz geliyoruz.</h1>
+      <p class="lead">Uzun Elektrik; pano tasarımı, arıza giderme ve kaçak akım şalteri tamirinde evinizin ve iş yerinizin güvenli kalması için gece gündüz yanınızda.</p>
+      <div class="cta">
+        <a class="btn btn-red" href="tel:+905315066714">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Hemen ara: 0 531 506 67 14
+        </a>
+        <a class="btn btn-line" href="#hizmetler">Hizmetlere bak</a>
+      </div>
+    </div>
+
+    <!-- Etkileşimli pano -->
+    <div class="board" aria-label="Elektrik panosu">
+      <div class="board-head">
+        <span>Uzun Elektrik panosu</span>
+        <span class="hint">Şalteri kaldır</span>
+      </div>
+      <div class="breakers">
+        <button class="breaker b-blue" aria-pressed="false" data-title="Pano tasarımı" data-text="Evinize, işyerinize ya da şantiyenize uygun sigorta panosu projelendirir, kurar ve etiketleriz. Yeni yük eklemek istediğinizde pano hazır olur.">
+          <span class="led"></span>
+          <span class="lever"></span>
+          <span class="b-name">Pano</span>
+        </button>
+        <button class="breaker b-red" aria-pressed="false" data-title="Arıza giderme" data-text="Priz çalışmıyor, sigorta sürekli atıyor, bir oda karanlıkta kaldı: arızanın yerini bulur, aynı gün çözeriz. Gece de arayabilirsiniz.">
+          <span class="led"></span>
+          <span class="lever"></span>
+          <span class="b-name">Arıza</span>
+        </button>
+        <button class="breaker b-cyan" aria-pressed="false" data-title="Kaçak akım şalteri tamiri" data-text="Atan, tutmayan ya da test düğmesi çalışmayan kaçak akım rölesini kontrol eder, tamir eder veya yenisiyle değiştiririz. Can güvenliği için ertelemeyin.">
+          <span class="led"></span>
+          <span class="lever"></span>
+          <span class="b-name">Kaçak akım</span>
+        </button>
+      </div>
+      <div class="screen" id="screen" aria-live="polite">
+        <strong id="screen-title">Pano kapalı</strong>
+        <p id="screen-text">Hangi hizmeti istediğini görmek için yukarıdaki şalterlerden birini kaldır.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>7/24 hizmet</span><span>Gece gündüz arıza</span><span>Kaçak akım şalteri</span><span>Pano tasarımı</span><span>0 531 506 67 14</span>
+      <span>7/24 hizmet</span><span>Gece gündüz arıza</span><span>Kaçak akım şalteri</span><span>Pano tasarımı</span><span>0 531 506 67 14</span>
+    </div>
+  </div>
+
+  <section class="services" id="hizmetler">
+    <h2>Üç işte uzmanız,<br>hepsini düzgün yaparız</h2>
+    <div class="grid">
+      <article class="card c-blue">
+        <h3>Pano tasarımı</h3>
+        <p>İhtiyacınıza göre sigorta panosu planlama, montaj ve yenileme. Kablolar düzenli, şalterler etiketli, bakım kolay.</p>
+        <a href="tel:+905315066714">Pano için ara</a>
+      </article>
+      <article class="card c-red">
+        <h3>Arıza giderme</h3>
+        <p>Elektrik gitmesi, kısa devre, atan sigortalar, çalışmayan prizler ve aydınlatma sorunları. 7/24 ulaşabilirsiniz.</p>
+        <a href="tel:+905315066714">Arıza için ara</a>
+      </article>
+      <article class="card c-cyan">
+        <h3>Kaçak akım şalteri tamiri</h3>
+        <p>Kaçak akım rölesi sürekli atıyorsa bir yerde kaçak var demektir. Bulur, tamir eder, gerekirse değiştiririz.</p>
+        <a href="tel:+905315066714">Şalter için ara</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="process" id="surec">
+    <h2>Aradığınızda ne olur?</h2>
+    <ol>
+      <li><b>1</b><div><h3>Bizi arıyorsunuz</h3><p>Sorunu kısaca anlatın. Saat kaç olursa olsun telefon açık.</p></div></li>
+      <li><b>2</b><div><h3>Yanınıza geliyoruz</h3><p>Ekipman hazır, en kısa sürede kapınızdayız.</p></div></li>
+      <li><b>3</b><div><h3>Arızayı buluyoruz</h3><p>Ölçüm yapıp nedeni net söylüyoruz, ne yapılacağını önce siz öğreniyorsunuz.</p></div></li>
+      <li><b>4</b><div><h3>Elektrik geri geliyor</h3><p>Tamiri bitirir, her şeyi test eder, öyle ayrılırız.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="contact" id="iletisim">
+    <p class="bolt" aria-hidden="true">⚡</p>
+    <h2>Şimdi arayın, 7/24 açığız</h2>
+    <a class="big-number" href="tel:+905315066714">0 531 506 67 14</a>
+    <p>Dokunun, telefonunuz aramaya başlasın.</p>
+  </section>
+</main>
+
+<footer>
+  <span>© <span id="yil">2026</span> Uzun Elektrik</span>
+  <a href="tel:+905315066714">0 531 506 67 14</a>
+</footer>
+
+<a class="float-call" href="tel:+905315066714" aria-label="Uzun Elektrik'i ara">
+  <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+</a>
+
+<script>
+  const title = document.getElementById('screen-title');
+  const text = document.getElementById('screen-text');
+  const breakers = document.querySelectorAll('.breaker');
+
+  breakers.forEach(b => {
+    b.addEventListener('click', () => {
+      const on = b.getAttribute('aria-pressed') === 'true';
+      // Aynı anda tek şalter açık kalsın
+      breakers.forEach(x => x.setAttribute('aria-pressed', 'false'));
+      if (!on) {
+        b.setAttribute('aria-pressed', 'true');
+        title.textContent = b.dataset.title;
+        text.textContent = b.dataset.text;
+      } else {
+        title.textContent = 'Pano kapalı';
+        text.textContent = 'Hangi hizmeti istediğini görmek için yukarıdaki şalterlerden birini kaldır.';
+      }
+    });
+  });
+
+  document.getElementById('yil').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
